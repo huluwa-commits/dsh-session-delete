@@ -1,0 +1,49 @@
+{
+  "format": 1,
+  "title": {
+    "en": "huluwa-commits plugin index",
+    "zh": "huluwa-commits 插件索引"
+  },
+  "description": {
+    "en": "Open-source plugins for DeepSeek Harness, maintained by huluwa-commits.",
+    "zh": "由 huluwa-commits 维护的 DeepSeek Harness 开源插件索引。"
+  },
+  "plugins": [
+    {
+      "name": "dsh-session-delete",
+      "title": {
+        "en": "Thorough Session Delete",
+        "zh": "彻底删除会话"
+      },
+      "description": {
+        "en": "Adds a \"Thorough Delete\" item to the session context menu. Deletes the JSONL log directory, projection cache, workspace registrations and in-memory session state — not just the sidebar row.",
+        "zh": "在会话右键菜单加入「彻底删除会话」。删除后端日志目录、投影缓存、工作区登记与内存会话状态，而不只是移除侧栏列表项。"
+      },
+      "author": "huluwa-commits",
+      "homepage": "https://github.com/huluwa-commits/dsh-session-delete#readme",
+      "repository": {
+        "url": "https://github.com/huluwa-commits/dsh-session-delete"
+      },
+      "metadata": {
+        "category": "productivity",
+        "keywords": ["session", "delete", "cleanup", "plugin"],
+        "labels": [],
+        "sortKeys": {}
+      },
+      "versions": [
+        {
+          "version": "1.0.0",
+          "publishTimestamp": 1794445621,
+          "source": {
+            "type": "git",
+            "url": "https://github.com/huluwa-commits/dsh-session-delete",
+            "commit": "40e6567199bf4d59735ee391c17cb65759990d9f"
+          },
+          "engines": {
+            "dsh": ">=0.2.2-rc.1"
+          }
+        }
+      ]
+    }
+  ]
+}
