@@ -1,0 +1,6 @@
+# dsh-session-delete bundle patch：一行、双面。
+# node 面 = 包默认导出（Host 删除路由），浏览器面 = ./client。
+# 行 name 必须等于包名。
+- insert:
+    - id: dsh-session-delete
+      name: 'dsh-session-delete'
