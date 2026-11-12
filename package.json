@@ -1,0 +1,31 @@
+{
+  "name": "dsh-session-delete",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "彻底删除 DSH 历史会话：右键菜单删除项 + 后端日志、投影缓存、工作区登记的完整清理。",
+  "main": "index.js",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./cordis.patch.yml": "./cordis.patch.yml",
+    "./package.json": "./package.json"
+  },
+  "files": ["index.js", "client.js", "cordis.patch.yml"],
+  "engines": {
+    "dsh": ">=0.2.2-rc.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/huluwa-commits/dsh-session-delete"
+  },
+  "homepage": "https://github.com/huluwa-commits/dsh-session-delete#readme",
+  "license": "MIT",
+  "keywords": ["dsh", "plugin", "session", "delete", "cleanup", "会话", "删除"],
+  "dsh": {
+    "bundle": { "patch": "./cordis.patch.yml" },
+    "client": {
+      "platform": "web",
+      "inject": ["@deepseek-ai/dsh-client-locale"]
+    }
+  }
+}
